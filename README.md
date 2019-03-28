@@ -32,3 +32,19 @@ kubectl lable pods <pod> mylabel=awesome
 # Run a shell in a pod -very useful for debugging
 kubectl run -i --tty busybox --image=busybox --restart=Never --sh
 ```
+
+```
+git clone https://github.com/qingjie/kubernetes-course
+cd kubernetes-course
+kubectl get node
+cat first-app/hello-world.yaml
+kubectl -f first-app/hello-world.yaml
+kubectl get pod
+kubectl describe pod <pod>
+
+kubectl port-foward <pod> 8081:3000
+curl localhost:8081
+or
+kubectl expose pod <pod> --type=NodePortn --name <pod>-service
+kubectl get service
+```
