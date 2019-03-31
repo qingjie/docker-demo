@@ -6,6 +6,16 @@ curl localhost:3000
 ```
 
 ```
+docker build .
+docker login
+docker tag <image-id> qingjiezhao/k8s-demo:latest
+docker push qingjiezhao/k8s-demo
+docker pull qingjiezhao/k8s-demo
+docker run -p 3000:3000 -t <image-id>
+curl localhost:3000
+```
+
+```
 docker login
 docker images
 docker tag <image-id> your-login/docker-demo
