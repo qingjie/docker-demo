@@ -58,3 +58,5 @@ or
 kubectl expose pod <pod> --type=NodePortn --name <pod>-service
 kubectl get service
 ```
+
+* https://jimmysong.io/kubernetes-handbook/guide/docker-cli-to-kubectl.html
