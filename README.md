@@ -68,3 +68,5 @@ docker run -p 127.0.0.1:8111:80 -d --name auth0_test auth0:v1
 
 docker run -it auth0:v1 /bin/sh
 ```
+
+* https://hsk.oray.com/news/6438.html
