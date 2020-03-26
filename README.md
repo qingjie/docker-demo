@@ -60,3 +60,11 @@ kubectl get service
 ```
 
 * https://jimmysong.io/kubernetes-handbook/guide/docker-cli-to-kubectl.html
+
+```
+docker build -t auth0:v1 .
+
+docker run -p 127.0.0.1:8111:80 -d --name auth0_test auth0:v1
+
+docker run -it auth0:v1 /bin/sh
+```
