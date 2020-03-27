@@ -72,16 +72,15 @@ docker run -it auth0:v1 /bin/sh
 * https://hsk.oray.com/news/6438.html
 
 ```
+
 docker build -t auth0:v1 .
 
-docker run -itd -p 3000:3000 -d --name auth0_test auth0:v1
+docker tag auth0:v1 qingjiezhao/auth0:v1
+docker run -d -p 3000:3000 -d --name auth0 qingjiezhao/auth0:v1
 
 docker run -it auth0:v1 /bin/sh
 
 
-
-
-docker login -u qingjiezhao -p 19820305.
-docker tag auth0:v1 qingjiezhao/auth0:v1
-docker push https://hub.docker.com/repositories/qingjiezhao/auth0:v1
+docker login -u username -p passwd
+docker push qingjiezhao/auth0:v1
 ```
